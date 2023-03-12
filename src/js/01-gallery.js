@@ -1,12 +1,13 @@
+// Add imports above this line
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 import { galleryItems } from './gallery-items';
-
+// Change code below this line
 const galleryContent = document.querySelector('.gallery');
 const itemString = renderGalleryItem(galleryItems);
 galleryContent.insertAdjacentHTML('beforeend', itemString);
-// Change code below this line
+
 function renderGalleryItem(galleryList) {
   return galleryList
     .map(({ preview, original, description }) => {
